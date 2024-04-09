@@ -1,11 +1,15 @@
-let num1 = parseFloat(document.getElementById("num1").value);
-let num2 = parseFloat(document.getElementById("num2").value);
+function calcular(op) {
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
 
+    let output = 0;
 
-const somarBotao = document.getElementById("calculo").addEventListener("click", calcularSoma);
-
-function calcularSoma() {
-    let output = num1 + num2;
+    switch (op) {
+        case '+': output = num1 + num2; break;
+        case '-': output = num1 - num2; break;
+        case '*': output = num1 * num2; break;
+        case '/': output = num1 / num2; break;
+    }
 
     document.getElementById("output").value = output;
 }

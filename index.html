@@ -12,7 +12,12 @@
             <h1>Calculadora</h1>
             <input id="num1" type="number">
             <input id="num2" type="number">
-            <button id="calculo">+</button>
+            <div class="botones">
+                <button onclick="calcular('+')">+</button>
+                <button onclick="calcular('-')">-</button>
+                <button onclick="calcular('*')">*</button>
+                <button onclick="calcular('/')">/</button>
+            </div>
             <input id="output" input="text" readonly>
         </div>
 
