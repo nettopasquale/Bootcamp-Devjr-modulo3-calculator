@@ -9,7 +9,10 @@
 <body>
     <div class="container">
         <div class="calc">
-            <h1>Calculadora</h1>
+            <object data="calculate_48.svg" type="image/svg+xml"></object>
+            <div class="calc-title">
+                Calculadora
+            </div>
             <input id="num1" type="number">
             <input id="num2" type="number">
             <div class="botones">
@@ -22,7 +25,13 @@
         </div>
 
         <div class="history">
-
+            <div class="history-title">
+                <h1>Histórico:</h1>
+            </div>
+            <div class="last-operations">
+                <small>10 últimas operações:</small>
+            </div>
+            <div id="history"></div>
         </div>
     </div>
     <script src="index.js"></script>

@@ -12,4 +12,14 @@ function calcular(op) {
     }
 
     document.getElementById("output").value = output;
+
+    let history = document.getElementById("history");
+
+    let newHistory =  `<p> ${num1} ${op} ${num2} = ${output}</p>`;
+
+    history.innerHTML = newHistory + history.innerHTML;
+
+    if (history.children.length > 10) {
+        history.removeChild(history.childNodes[10]);
+    }
 }
